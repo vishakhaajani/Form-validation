@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Add a new blog</h1>
+
+            <form onsubmit="return save()">
+
+                <p>Blog title:</p>
+                <input type="text" id="title">
+    
+                <p>Blog body:</p>
+                <textarea rows="3" cols="66" id="body"></textarea>
+                <span id="bodynot"></span>
+    
+                <p>Author:</p>
+                <input type="text" id="author">
+                <span id="authornot"></span>
+    
+                <p>Number:</p>
+                <input type="number" id="number">
+                <span id="numbernot"></span>
+    
+                <p>Email:</p>
+                <input type="email" id="email">
+                <span id="emailnot"></span>
+
+                <div class="button">
+                    <button type="submit"> Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="form.js"></script>
+</html>
